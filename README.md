@@ -1,1 +1,1 @@
-# Docs
+# Courses
