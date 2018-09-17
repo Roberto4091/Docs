@@ -62,18 +62,6 @@ def str_insert_character_every_three(string, char):
     return str_format
 
 
-def str_insert_character_refactor(cadena, caracter, inserciones):
-    # revisar
-    cadena_retornada = ""
-    for i in cadena:
-        cadena_retornada += i
-        if inserciones > 0:
-            cadena_retornada += caracter
-            inserciones -= 1
-
-    return cadena_retornada
-
-
 def str_delete_spacing_refactor(string, replace, max_replace):
     # 6.3
     string = string.replace(" ", replace, max_replace)
