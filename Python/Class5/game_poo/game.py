@@ -28,6 +28,6 @@ if __name__ == '__main__':
     p1 = Personage(**data_p1)
     p2 = Personage(**data_p2)
 
-    personage_win = run_game(p1, p2)
+    winner = run_game(p1, p2)
 
-    print('El ganador es {}'.format(personage_win.get_name()))
+    print('El ganador es {}'.format(winner.get_name()))
