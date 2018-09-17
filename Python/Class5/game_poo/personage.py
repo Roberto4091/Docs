@@ -2,32 +2,32 @@ from random import randint
 
 
 class Personage:
-    _name = None
-    _health = None
-    _attack = None
+    __name = None
+    __health = None
+    __attack = None
 
     def __init__(self, name, health, attack):
-        self._name = name
-        self._health = health
-        self._attack = attack
+        self.__name = name
+        self.__health = health
+        self.__attack = attack
 
     def get_name(self):
-        return self._name
+        return self.__name
 
     def get_health(self):
-        return self._health
+        return self.__health
 
     def get_attack(self):
-        return self._attack
+        return self.__attack
 
     def receive_attack(self, attack):
-        self._health -= randint(0, attack)
+        self.__health -= randint(0, attack)
 
     def serialize_person(self):
         template = "{name} (health: {health} / attack: {attack})"
 
         return template.format(
-            name=self._name,
-            health=self._health,
-            attack=self._attack
+            name=self.__name,
+            health=self.__health,
+            attack=self.__attack
         )
